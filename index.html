@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Developer Portfolio | Thiruselvan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { color: #333; line-height: 1.6; background: #f9f9f9; }
+
+    /* Header */
+    header { background: #1b5e20; color: #fff; padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+    header .container { display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto; }
+    header nav ul { display: flex; gap: 20px; list-style: none; }
+    header nav a { color: #fff; text-decoration: none; font-weight: 500; transition: 0.3s; }
+    header nav a:hover { color: #ffeb3b; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, #43a047, #c6ff00); color: #fff; text-align: center; padding: 120px 20px; }
+    .hero h1 span { color: #1b5e20; font-weight: 700; }
+    .hero p { font-size: 1.2rem; margin: 15px 0 25px; }
+    .btn { background: #1b5e20; color: #fff; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 500; transition: 0.3s; }
+    .btn:hover { background: #ffeb3b; color: #1b5e20; }
+
+    /* Sections */
+    section { padding: 60px 20px; }
+    .section-color { background: #f1f8e9; }
+    section h2 { text-align: center; margin-bottom: 40px; color: #1b5e20; }
+
+    /* Timeline / Experience */
+    .timeline { display: flex; flex-direction: column; gap: 25px; }
+    .timeline-item { background: #fff; padding: 20px; border-left: 5px solid #43a047; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .timeline-item:hover { transform: translateY(-5px); }
+    .timeline-item span { color: #888; font-size: 0.9rem; }
+
+    /* Education */
+    .edu-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .edu-list li { background: #fff; padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .edu-list li:hover { transform: translateY(-3px); }
+    .edu-list span { color: #555; font-size: 0.9rem; }
+
+    /* Skills */
+    .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .skills-list span { background: linear-gradient(135deg,#ffeb3b,#43a047); padding: 12px 20px; border-radius: 25px; color: #1b5e20; font-weight: 500; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .skills-list span:hover { transform: scale(1.1); }
+
+    /* Projects */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 25px; }
+    .project-card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-7px); }
+    .project-card a { color: #1b5e20; font-weight: 500; text-decoration: none; }
+    .project-card a:hover { color: #ffeb3b; }
+
+    /* Contact Form */
+    form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+    form input, form textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; }
+    form button { padding: 12px; background: #43a047; color: #fff; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+    form button:hover { background: #ffeb3b; color: #1b5e20; }
+
+    /* Footer */
+    footer { background: #1b5e20; color: #fff; text-align: center; padding: 20px 0; }
+
+    /* Responsive */
+    @media(max-width:768px){ header .container{flex-direction:column;gap:10px;} header nav ul{flex-direction:column;gap:10px;} }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Thiruselvan</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="hero">
+    <div class="container hero-content">
+      <h1>Hello! I'm <span>Thiruselvan</span></h1>
+      <p>B.Sc Computer Science with Data Analytics graduate. Passionate about front-end development and integrating data analytics with sports and physical activity insights.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-color">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Front-End Developer | Sports Analytics Project</h3>
+          <span>2024 - Present</span>
+          <p>Developed interactive dashboards to visualize sports data using HTML, CSS, JavaScript, and chart libraries. Worked on front-end implementation of player performance analytics and fitness tracking apps.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Intern | Data Analytics Intern</h3>
+          <span>2023 - 2024</span>
+          <p>Analyzed sports and physical activity datasets, created reports, and assisted in building web-based data visualization tools for coaches and athletes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>
+          <h3>B.Sc Computer Science with Data Analytics</h3>
+          <span>KPR College of Arts, Science and Research | 2021 - 2024</span>
+        </li>
+        <li>
+          <h3>High School</h3>
+          <span>XYZ Higher Secondary School | 2019 - 2021</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-color">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>React.js</span>
+        <span>Data Analytics</span>
+        <span>Chart.js</span>
+        <span>Bootstrap</span>
+        <span>Responsive Design</span>
+        <span>UI/UX Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects & Achievements</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Sports Performance Dashboard</h3>
+          <p>Interactive dashboard visualizing player performance and fitness metrics using JavaScript and Chart.js.</p>
+          <a href="#" target="_blank">View</a>
+        </div>
+        <div class="project-card">
+          <h3>Physical Activity Tracker</h3>
+          <p>A web application tracking exercise and sports activities, providing insights into fitness trends.</p>
+          <a href="#" target="_blank">View</a>
+        </div>
+        <div class="project-card">
+          <h3>Landing Page Design</h3>
+          <p>Responsive landing page built for a sports analytics website using HTML, CSS, and Bootstrap.</p>
+          <a href="#" target="_blank">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-color">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-message" style="text-align:center; margin-top:10px; color:green;"></p>
+      <div style="margin-top:30px; text-align:center;">
+        <p><strong>Email:</strong> thiruselvan@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/thiruselvan</a></p>
+        <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/thiruselvan</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thiruselvan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Contact form submit
+    const form = document.getElementById("contact-form");
+    const message = document.getElementById("form-message");
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      message.textContent = "Thank you! Your message has been sent.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
